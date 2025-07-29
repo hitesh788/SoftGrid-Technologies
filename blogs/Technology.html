@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Trends 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        
+        .trend-card {
+            transition: all 0.3s ease;
+        }
+        
+        .trend-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .trend-icon {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#4f46e5 0.5px, transparent 0.5px), radial-gradient(#4f46e5 0.5px, #0f172a 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-pattern text-white">
+        <div class="container mx-auto px-4 py-20 md:py-32 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Web Development Trends to Watch in <span class="text-indigo-400">2025</span></h1>
+                <p class="text-xl md:text-2xl mb-10 text-gray-300">Explore the latest innovations shaping the digital landscape and how businesses can leverage them.</p>
+                <div class="flex justify-center">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 flex items-center">
+                        <span>Explore Trends</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator">
+                    <i class="fas fa-chevron-down text-2xl text-indigo-400"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">The Future of Web Development</h2>
+                <p class="text-lg text-gray-600 mb-8 text-center">As we approach 2025, the web development landscape continues to evolve at an unprecedented pace. Staying ahead of these trends isn't just about adopting new technologies—it's about reimagining how we build digital experiences.</p>
+                <div class="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-2xl">
+                    <div class="mb-6 md:mb-0 md:mr-8">
+                        <h3 class="text-2xl font-semibold mb-4">Why These Trends Matter</h3>
+                        <p class="text-gray-600">Understanding these emerging technologies and methodologies will help businesses create more engaging, accessible, and efficient web experiences that meet the evolving expectations of users.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <div class="w-32 h-32 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-5xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trends Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">10 Key Trends for <span class="gradient-text">2025</span></h2>
+            <p class="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">These technologies and approaches are set to define the next era of web development.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Trend 1 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-brain text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">AI-Driven Development</h3>
+                        <p class="text-gray-600 mb-4">AI tools are revolutionizing how developers write code, debug applications, and optimize performance, reducing development time by up to 40%.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 2 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-vr-cardboard text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">WebXR Experiences</h3>
+                        <p class="text-gray-600 mb-4">Immersive AR and VR experiences delivered directly through browsers are becoming mainstream, transforming e-commerce and educational platforms.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 3 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-server text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Edge Computing</h3>
+                        <p class="text-gray-600 mb-4">Processing data closer to where it's needed reduces latency and improves performance, especially for global applications with diverse user bases.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 4 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-microchip text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">WebAssembly Evolution</h3>
+                        <p class="text-gray-600 mb-4">WASM continues to mature, enabling high-performance applications in browsers that rival native desktop experiences in speed and functionality.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 5 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-universal-access text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Accessibility-First Design</h3>
+                        <p class="text-gray-600 mb-4">Beyond compliance, accessibility is becoming a fundamental design principle, with AI tools helping developers create more inclusive experiences automatically.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 6 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-mobile-alt text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Progressive Web Apps 2.0</h3>
+                        <p class="text-gray-600 mb-4">PWAs are evolving with deeper hardware integration and improved offline capabilities, blurring the line between web and native applications.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 7 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-shield-alt text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Zero-Trust Architecture</h3>
+                        <p class="text-gray-600 mb-4">Security models are shifting toward continuous verification at every stage, with passwordless authentication becoming the standard for web applications.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 8 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-code-branch text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Micro-Frontends</h3>
+                        <p class="text-gray-600 mb-4">Breaking monolithic frontends into independently deployable features allows teams to work more autonomously and deliver updates more frequently.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 9 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-leaf text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Green Web Development</h3>
+                        <p class="text-gray-600 mb-4">Sustainable practices are becoming essential, with developers optimizing for energy efficiency and reduced carbon footprints in their applications.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trend 10 -->
+                <div class="trend-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                            <i class="fas fa-network-wired text-3xl trend-icon"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Web3 Integration</h3>
+                        <p class="text-gray-600 mb-4">Decentralized technologies are being incorporated into mainstream applications, offering new models for user ownership and data sovereignty.</p>
+                        <div class="flex items-center text-sm text-indigo-600">
+                            <span class="font-medium">Learn more</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Embrace the Future?</h2>
+                <p class="text-xl mb-10">Stay ahead of the curve by implementing these trends in your web development strategy.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white text-indigo-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-full transition duration-300">
+                        Download Full Report
+                    </button>
+                    <button class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 font-medium py-3 px-8 rounded-full transition duration-300">
+                        Schedule a Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-gray-50 rounded-2xl p-8 shadow-lg">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2">Stay Updated on Web Development Trends</h3>
+                    <p class="text-gray-600">Get monthly insights and tips delivered straight to your inbox.</p>
+                </div>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4 text-center">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                           
+        
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SoftGrid Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for the "Explore Trends" button
+        document.querySelector('button').addEventListener('click', function() {
+            document.querySelector('.py-16.bg-gray-50').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+        
+        // Add active state to trend cards
+        const trendCards = document.querySelectorAll('.trend-card');
+        trendCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // You could expand this to show more details about each trend
+                console.log('Card clicked:', this.querySelector('h3').textContent);
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'966be254f11f54e4',t:'MTc1Mzc4NDQzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
