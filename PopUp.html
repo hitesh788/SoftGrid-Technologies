@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>20% Off IT Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .popup-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Popup Container -->
+  <div id="popup" class="fixed inset-0 flex items-center justify-center popup-overlay z-50">
+    <div class="bg-white p-8 rounded-xl shadow-xl max-w-sm w-full relative text-center">
+      
+      <!-- Close Button -->
+      <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-lg font-bold">&times;</button>
+
+      <!-- Content -->
+      <h2 class="text-2xl font-bold mb-4 text-purple-700">🎉 Get 20% OFF!</h2>
+      <p class="mb-4 text-gray-700">On all our IT services:</p>
+      <ul class="text-left text-sm text-gray-600 mb-4 list-disc list-inside">
+        <li>Web Development</li>
+        <li>Website Security</li>
+        <li>Facebook Ads</li>
+        <li>Page Maintenance</li>
+        <li>Online Training</li>
+      </ul>
+      <p class="mb-4 text-sm text-gray-700">Enter your email to register & get more info:</p>
+
+      <!-- Form -->
+      <form id="contact-form" action="https://formspree.io/f/xdkdzjwl" method="POST" target="_blank" class="flex flex-col items-center gap-3">
+        <input type="email" name="email" required placeholder="Enter your email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-md w-full">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script to Close Popup -->
+  <script>
+    function closePopup() {
+      document.getElementById('popup').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
