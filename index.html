@@ -11,6 +11,8 @@
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -50,6 +52,8 @@
             overflow-x: hidden;
         }
         
+
+
         .hero-gradient {
             background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
         }
@@ -223,7 +227,8 @@
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                    <a href="index.html" >
-  <img src="medias/logo.png" alt="SoftGrid Technologies Logo" class="h-48 w-auto text-3xl font-bold ml-[-30px]">
+ <img src="medias/logo copy.png" alt="SoftGrid Technologies Logo"
+     style="height: 40px; width: auto; margin-left: 0; object-fit: contain;" />
 </a>
 
 
@@ -232,13 +237,15 @@
 
                 <!-- Desktop navigation -->
                 <div class="hidden md:flex items-center space-x-10">
-                    <a href="index.html" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-home">Home</a>
-                    <a href="#services" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-services">Services</a>
-                    <a href="#projects" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-projects">Projects</a>
-                    <a href="#about" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-about">About</a>
-                    <a href="#blog" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-blog">Blog</a>
-                    <a href="#contact" class="text-black-700 hover:text-yellow-600 transition-colors duration-300 focus-visible" id="nav-contact">Contact</a>
+                    <a href="index.html" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-home">Home</a>
+                    <a href="#services" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-services">Services</a>
+                    <a href="#projects" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-projects">Projects</a>
+                    <a href="#about" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-about">About</a>
+                    <a href="#blog" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-blog">Blog</a>
+                    <a href="#contact" class="text-black-700 hover:text-yellow-400 transition-colors duration-300 focus-visible" id="nav-contact">Contact</a>
                 </div>
+                  
+
                 
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-primary-600 focus:outline-none focus-visible" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
@@ -252,14 +259,15 @@
             <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md" aria-label="Mobile navigation">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-primary-600 hover:bg-gray-50 focus-visible" id="mobile-nav-home">Home</a>
-                    <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50 focus-visible" id="mobile-nav-services">Services</a>
-                    <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50 focus-visible" id="mobile-nav-projects">Projects</a>
-                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50 focus-visible" id="mobile-nav-about">About</a>
-                    <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50 focus-visible" id="mobile-nav-blog">Blog</a>
-                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-600 hover:bg-gray-50 focus-visible" id="mobile-nav-contact">Contact</a>
+                    <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-400 hover:bg-gray-50 focus-visible" id="mobile-nav-services">Services</a>
+                    <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-400 hover:bg-gray-50 focus-visible" id="mobile-nav-projects">Projects</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-400 hover:bg-gray-50 focus-visible" id="mobile-nav-about">About</a>
+                    <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-400 hover:bg-gray-50 focus-visible" id="mobile-nav-blog">Blog</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-yellow-400 hover:bg-gray-50 focus-visible" id="mobile-nav-contact">Contact</a>
                 </div>
             </div>
         </nav>
+        
     </header>
 
     <main id="main-content">
@@ -595,10 +603,10 @@
                 <!-- Project Filters -->
                 <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
                     <button class="filter-button active text-gray-700 hover:text-primary-600 transition-colors px-4 py-2 rounded-md" data-filter="all">All Projects</button>
-                    <button class="filter-button text-gray-700 hover:text-primary-600 transition-colors px-4 py-2 rounded-md" data-filter="web-development">Web Development</button>
-                    <button class="filter-button text-gray-700 hover:text-primary-600 transition-colors px-4 py-2 rounded-md" data-filter="mobile-app">Mobile App</button>
-                    <button class="filter-button text-gray-700 hover:text-primary-600 transition-colors px-4 py-2 rounded-md" data-filter="e-commerce">E-Commerce</button>
-                    <button class="filter-button text-gray-700 hover:text-primary-600 transition-colors px-4 py-2 rounded-md" data-filter="branding">Branding</button>
+                    <button class="filter-button text-gray-700 hover:text-yellow-400 transition-colors px-4 py-2 rounded-md" data-filter="web-development">Web Development</button>
+                    <button class="filter-button text-gray-700 hover:text-yellow-400 transition-colors px-4 py-2 rounded-md" data-filter="mobile-app">Mobile App</button>
+                    <button class="filter-button text-gray-700 hover:text-yellow-400 transition-colors px-4 py-2 rounded-md" data-filter="e-commerce">E-Commerce</button>
+                    <button class="filter-button text-gray-700 hover:text-yellow-400 transition-colors px-4 py-2 rounded-md" data-filter="branding">Branding</button>
                 </div>
                 
                 <!-- Featured Project -->
@@ -710,7 +718,7 @@
                     <!-- Project Card 4 -->
                     <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" data-category="branding">
                         <div class="bg-yellow-50 h-48 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3.25c-.305 0-.61.053-.9.157l-6 2.1A2.25 2.25 0 004.5 7.618v4.507c0 5.074 3.389 9.627 8.25 10.875 4.861-1.248 8.25-5.801 8.25-10.875V7.618a2.25 2.25 0 00-1.6-2.111l-6-2.1a2.25 2.25 0 00-.9-.157zM9 12.75l1.5 1.5L15 9.75" />
                             </svg>
                         </div>
@@ -1107,7 +1115,7 @@
                 </div>
                 
                 <div class="mt-12 text-center">
-                    <a href="#blog" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 focus-visible" id="view-all-posts">
+                    <a href="#blog" class="bg-primary-600 hover:bg-yellow-400 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 focus-visible" id="view-all-posts">
                         View All Posts
                     </a>
                 </div>
@@ -1241,7 +1249,7 @@
                                 </div>
                                 <div class="ml-3">
                                     <h3 class="text-lg font-medium text-gray-900">Address</h3>
-                                    <address class="text-gray-600 not-italic">New Baneshwor<br>Kathmandu, Nepal 44600</address>
+                                    <address class="text-gray-600 not-italic">New Baneshwor<br>Kathmandu, Nepal-44600</address>
                                 </div>
                             </div>
                             
@@ -1269,6 +1277,8 @@
                                     <h3 class="text-lg font-medium text-gray-900">Phone</h3>
                                     <p class="text-gray-600">
                                         <a href="tel:+977-9748285243" class="hover:text-primary-600 focus-visible">+977-9748285243</a>
+                                    <br>
+                                        <a href="tel:+91-8015600894" class="hover:text-primary-600 focus-visible">+91-8015600894</a>
                                     </p>
                                 </div>
                             </div>
@@ -1293,7 +1303,7 @@
                             </div>
                             
                             <div>
-                                <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 focus-visible">Send Message</button>
+                                <button type="submit" class="w-full bg-primary-600 hover:bg-yellow-400 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 focus-visible">Send Message</button>
                             </div>
                             
                             <div id="form-status" class="mt-4 text-center hidden" role="alert" aria-live="polite"></div>
@@ -1308,9 +1318,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                  <a href="index.html">
-                    <img src="medias/Transparent_logo.png" alt="SoftGrid Technologies Logo" class="h-48 w-48 object-contain">
-                        </a>
+                  <a href="index.html" >
+ <img src="medias/Transparent_logo.png" alt="SoftGrid Technologies Logo"
+     style="height: 40px; width: auto; margin-left: 0; object-fit: contain;" />
+</a>
 
                     <p class="text-gray-400 mb-4">Transforming businesses with innovative digital solutions since 2024.</p>
                     <div class="flex space-x-4">
@@ -1367,7 +1378,7 @@
                             <label for="newsletter-email" class="sr-only">Email address</label>
                             <input type="email" id="newsletter-email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500" placeholder="Your email" required>
                         </div><br>
-                        <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 focus-visible">Subscribe</button>
+                        <button type="submit" class="w-full bg-primary-600 hover:bg-yellow-400 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 focus-visible">Subscribe</button>
                     </form><br>
                     <br>
                     <p class="text-gray-400">
@@ -1391,4 +1402,5 @@
                 </div>
             </div>
         </section>
+        
 </main>
